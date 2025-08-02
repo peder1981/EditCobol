@@ -1,0 +1,13 @@
+# Arquivo de configuração para o Editor de Arquivo de Movimentação Financeira
+
+# Diretório padrão para buscar arquivos
+DIRETORIO_PADRAO=.
+
+# Extensões de arquivo a serem consideradas
+EXTENSOES=.txt,.dat,.mov,.fin
+
+# Codificação de caracteres
+CODIFICACAO=utf-8
+
+# Tolerância para validação de valores (em reais)
+TOLERANCIA_VALORES=0.01

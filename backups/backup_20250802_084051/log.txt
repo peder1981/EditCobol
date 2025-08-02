@@ -1,0 +1,17 @@
+# Log de operações do Editor de Arquivo de Movimentação Financeira
+
+# Formato do log:
+# [DATA/HORA] [NÍVEL] [AÇÃO] [DETALHES]
+
+# Exemplos:
+# [2025-08-02 08:35:22] [INFO] [ABRIR_ARQUIVO] Arquivo exemplo_valido.txt carregado com sucesso
+# [2025-08-02 08:36:15] [INFO] [EDITAR_REGISTRO] Registro 2 modificado
+# [2025-08-02 08:36:45] [INFO] [RECALCULAR_TRAILER] Trailer atualizado após edição
+# [2025-08-02 08:37:20] [INFO] [SALVAR_ARQUIVO] Arquivo salvo com sucesso
+[2025-08-02 08:39:26] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo run.sh
+[2025-08-02 08:39:26] [INFO] [log_operacao] [ERRO_VALIDACAO] Linha 1 tem 11 caracteres, deveria ter 91
+[2025-08-02 08:39:35] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo exemplo_valido.txt
+[2025-08-02 08:39:35] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 08:39:35] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 2 registros de movimento carregados
+[2025-08-02 08:39:35] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 08:39:35] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo exemplo_valido.txt carregado e validado com sucesso

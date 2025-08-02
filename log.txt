@@ -1,0 +1,991 @@
+# Log de operações do Editor de Arquivo de Movimentação Financeira
+
+# Formato do log:
+# [DATA/HORA] [NÍVEL] [AÇÃO] [DETALHES]
+
+# Exemplos:
+# [2025-08-02 08:35:22] [INFO] [ABRIR_ARQUIVO] Arquivo exemplo_valido.txt carregado com sucesso
+# [2025-08-02 08:36:15] [INFO] [EDITAR_REGISTRO] Registro 2 modificado
+# [2025-08-02 08:36:45] [INFO] [RECALCULAR_TRAILER] Trailer atualizado após edição
+# [2025-08-02 08:37:20] [INFO] [SALVAR_ARQUIVO] Arquivo salvo com sucesso
+[2025-08-02 08:39:26] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo run.sh
+[2025-08-02 08:39:26] [INFO] [log_operacao] [ERRO_VALIDACAO] Linha 1 tem 11 caracteres, deveria ter 91
+[2025-08-02 08:39:35] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo exemplo_valido.txt
+[2025-08-02 08:39:35] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 08:39:35] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 2 registros de movimento carregados
+[2025-08-02 08:39:35] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 08:39:35] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo exemplo_valido.txt carregado e validado com sucesso
+[2025-08-02 08:41:40] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo /tmp/tmpu2mm3l0v.txt
+[2025-08-02 08:41:40] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 08:41:40] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 2 registros de movimento carregados
+[2025-08-02 08:41:40] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 08:41:40] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo /tmp/tmpu2mm3l0v.txt carregado e validado com sucesso
+[2025-08-02 08:41:40] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo /tmp/tmp43c888wz.txt
+[2025-08-02 08:41:40] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 08:41:40] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 2 registros de movimento carregados
+[2025-08-02 08:41:40] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 08:41:40] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo /tmp/tmp43c888wz.txt carregado e validado com sucesso
+[2025-08-02 08:41:40] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo /tmp/tmpr8x5dizk.txt
+[2025-08-02 08:41:40] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 08:41:40] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 2 registros de movimento carregados
+[2025-08-02 08:41:40] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 08:41:40] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo /tmp/tmpr8x5dizk.txt carregado e validado com sucesso
+[2025-08-02 08:41:40] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo /tmp/tmp680zqy1x.txt
+[2025-08-02 08:41:40] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 08:41:40] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 3 registros de movimento carregados
+[2025-08-02 08:41:40] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 08:41:40] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo /tmp/tmp680zqy1x.txt carregado e validado com sucesso
+[2025-08-02 08:42:25] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo /tmp/tmp57_ugezh.txt
+[2025-08-02 08:42:25] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 08:42:25] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 2 registros de movimento carregados
+[2025-08-02 08:42:25] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 08:42:25] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo /tmp/tmp57_ugezh.txt carregado e validado com sucesso
+[2025-08-02 08:42:25] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo /tmp/tmp7as62ty2.txt
+[2025-08-02 08:42:25] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 08:42:25] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 2 registros de movimento carregados
+[2025-08-02 08:42:25] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 08:42:25] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo /tmp/tmp7as62ty2.txt carregado e validado com sucesso
+[2025-08-02 08:42:25] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo /tmp/tmp_uz5_doc.txt
+[2025-08-02 08:42:25] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 08:42:25] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 2 registros de movimento carregados
+[2025-08-02 08:42:25] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 08:42:25] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo /tmp/tmp_uz5_doc.txt carregado e validado com sucesso
+[2025-08-02 08:42:25] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo /tmp/tmp0rw20ubu.txt
+[2025-08-02 08:42:25] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 08:42:25] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 3 registros de movimento carregados
+[2025-08-02 08:42:25] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 08:42:25] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo /tmp/tmp0rw20ubu.txt carregado e validado com sucesso
+[2025-08-02 08:42:29] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo /tmp/tmp35h05tot.txt
+[2025-08-02 08:42:29] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 08:42:29] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 2 registros de movimento carregados
+[2025-08-02 08:42:29] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 08:42:29] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo /tmp/tmp35h05tot.txt carregado e validado com sucesso
+[2025-08-02 08:42:29] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo /tmp/tmp58s08tul.txt
+[2025-08-02 08:42:29] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 08:42:29] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 2 registros de movimento carregados
+[2025-08-02 08:42:29] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 08:42:29] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo /tmp/tmp58s08tul.txt carregado e validado com sucesso
+[2025-08-02 08:42:29] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo /tmp/tmpsui6vpzz.txt
+[2025-08-02 08:42:29] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 08:42:29] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 2 registros de movimento carregados
+[2025-08-02 08:42:29] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 08:42:29] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo /tmp/tmpsui6vpzz.txt carregado e validado com sucesso
+[2025-08-02 08:42:29] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo /tmp/tmp7a03wa6l.txt
+[2025-08-02 08:42:29] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 08:42:29] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 3 registros de movimento carregados
+[2025-08-02 08:42:29] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 08:42:29] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo /tmp/tmp7a03wa6l.txt carregado e validado com sucesso
+[2025-08-02 08:45:29] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo backup_arquivos.py
+[2025-08-02 08:45:29] [INFO] [log_operacao] [ERRO_VALIDACAO] Linha 1 tem 22 caracteres, deveria ter 91
+[2025-08-02 08:45:42] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo exemplo_valido.txt
+[2025-08-02 08:45:42] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 08:45:42] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 2 registros de movimento carregados
+[2025-08-02 08:45:42] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 08:45:42] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo exemplo_valido.txt carregado e validado com sucesso
+[2025-08-02 08:47:20] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo /tmp/tmpb0gq3l0g.txt
+[2025-08-02 08:47:20] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 08:47:20] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 2 registros de movimento carregados
+[2025-08-02 08:47:20] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 08:47:20] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo /tmp/tmpb0gq3l0g.txt carregado e validado com sucesso
+[2025-08-02 08:47:20] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo /tmp/tmpuzh5o9ry.txt
+[2025-08-02 08:47:20] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 08:47:20] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 2 registros de movimento carregados
+[2025-08-02 08:47:20] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 08:47:20] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo /tmp/tmpuzh5o9ry.txt carregado e validado com sucesso
+[2025-08-02 08:47:20] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo /tmp/tmpixe3mnf4.txt
+[2025-08-02 08:47:20] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 08:47:20] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 2 registros de movimento carregados
+[2025-08-02 08:47:20] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 08:47:20] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo /tmp/tmpixe3mnf4.txt carregado e validado com sucesso
+[2025-08-02 08:47:20] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo /tmp/tmp6h4__4tg.txt
+[2025-08-02 08:47:20] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 08:47:20] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 3 registros de movimento carregados
+[2025-08-02 08:47:20] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 08:47:20] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo /tmp/tmp6h4__4tg.txt carregado e validado com sucesso
+[2025-08-02 08:49:54] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo /tmp/tmpxci5rz5g.txt
+[2025-08-02 08:49:54] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 08:49:54] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 2 registros de movimento carregados
+[2025-08-02 08:49:54] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 08:49:54] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo /tmp/tmpxci5rz5g.txt carregado e validado com sucesso
+[2025-08-02 08:49:54] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo /tmp/tmp4t1h2lru.txt
+[2025-08-02 08:49:54] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 08:49:54] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 2 registros de movimento carregados
+[2025-08-02 08:49:54] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 08:49:54] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo /tmp/tmp4t1h2lru.txt carregado e validado com sucesso
+[2025-08-02 08:49:54] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo /tmp/tmpyc_3csli.txt
+[2025-08-02 08:49:54] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 08:49:54] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 2 registros de movimento carregados
+[2025-08-02 08:49:54] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 08:49:54] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo /tmp/tmpyc_3csli.txt carregado e validado com sucesso
+[2025-08-02 08:49:54] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo /tmp/tmp5ld_q6iv.txt
+[2025-08-02 08:49:54] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 08:49:54] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 3 registros de movimento carregados
+[2025-08-02 08:49:54] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 08:49:54] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo /tmp/tmp5ld_q6iv.txt carregado e validado com sucesso
+[2025-08-02 08:59:43] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo rc160625.008
+[2025-08-02 08:59:43] [INFO] [log_operacao] [ERRO_VALIDACAO] Linha 182 tem 7 caracteres, deveria ter 91
+[2025-08-02 09:02:00] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo rc160625.008
+[2025-08-02 09:02:00] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 09:02:00] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 180 registros de movimento carregados
+[2025-08-02 09:02:00] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 09:02:00] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rc160625.008 carregado e validado com sucesso
+[2025-08-02 09:03:04] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Iniciando exclusão de registros para adquirente 03
+[2025-08-02 09:03:04] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 179 do adquirente 03
+[2025-08-02 09:03:04] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 178 do adquirente 03
+[2025-08-02 09:03:04] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 177 do adquirente 03
+[2025-08-02 09:03:04] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 176 do adquirente 03
+[2025-08-02 09:03:04] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 175 do adquirente 03
+[2025-08-02 09:03:04] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 174 do adquirente 03
+[2025-08-02 09:03:04] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 173 do adquirente 03
+[2025-08-02 09:03:04] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 172 do adquirente 03
+[2025-08-02 09:03:04] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 171 do adquirente 03
+[2025-08-02 09:03:04] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 170 do adquirente 03
+[2025-08-02 09:03:04] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 169 do adquirente 03
+[2025-08-02 09:03:04] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 168 do adquirente 03
+[2025-08-02 09:03:04] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 167 do adquirente 03
+[2025-08-02 09:03:04] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 166 do adquirente 03
+[2025-08-02 09:03:04] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 165 do adquirente 03
+[2025-08-02 09:03:04] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 164 do adquirente 03
+[2025-08-02 09:03:04] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 163 do adquirente 03
+[2025-08-02 09:03:04] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 162 do adquirente 03
+[2025-08-02 09:03:04] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 161 do adquirente 03
+[2025-08-02 09:03:04] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 159 do adquirente 03
+[2025-08-02 09:03:04] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 158 do adquirente 03
+[2025-08-02 09:03:04] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 157 do adquirente 03
+[2025-08-02 09:03:04] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 156 do adquirente 03
+[2025-08-02 09:03:04] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 155 do adquirente 03
+[2025-08-02 09:03:04] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 154 do adquirente 03
+[2025-08-02 09:03:04] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 153 do adquirente 03
+[2025-08-02 09:03:04] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 152 do adquirente 03
+[2025-08-02 09:03:04] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 151 do adquirente 03
+[2025-08-02 09:03:04] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 150 do adquirente 03
+[2025-08-02 09:03:04] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 149 do adquirente 03
+[2025-08-02 09:03:04] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 148 do adquirente 03
+[2025-08-02 09:03:04] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 147 do adquirente 03
+[2025-08-02 09:03:04] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 23 do adquirente 03
+[2025-08-02 09:03:04] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 22 do adquirente 03
+[2025-08-02 09:03:04] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 21 do adquirente 03
+[2025-08-02 09:03:04] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 20 do adquirente 03
+[2025-08-02 09:03:04] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 19 do adquirente 03
+[2025-08-02 09:03:04] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 18 do adquirente 03
+[2025-08-02 09:03:04] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 17 do adquirente 03
+[2025-08-02 09:03:04] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] 39 registro(s) excluído(s) para o adquirente 03 e trailer recalculado
+[2025-08-02 09:03:17] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Iniciando exclusão de registros para adquirente 44
+[2025-08-02 09:03:17] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 141 do adquirente 44
+[2025-08-02 09:03:17] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 140 do adquirente 44
+[2025-08-02 09:03:17] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 139 do adquirente 44
+[2025-08-02 09:03:17] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 138 do adquirente 44
+[2025-08-02 09:03:17] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 137 do adquirente 44
+[2025-08-02 09:03:17] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 136 do adquirente 44
+[2025-08-02 09:03:17] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 135 do adquirente 44
+[2025-08-02 09:03:17] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] 7 registro(s) excluído(s) para o adquirente 44 e trailer recalculado
+[2025-08-02 09:08:42] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo rc160625.008
+[2025-08-02 09:08:42] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 09:08:42] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 180 registros de movimento carregados
+[2025-08-02 09:08:42] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 09:08:42] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rc160625.008 carregado e validado com sucesso
+[2025-08-02 09:23:11] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo rx160625.008
+[2025-08-02 09:23:11] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 09:23:11] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 18 registros de movimento carregados
+[2025-08-02 09:23:11] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 09:23:11] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rx160625.008 carregado e validado com sucesso
+[2025-08-02 09:39:58] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo /tmp/tmpv14if72a.txt
+[2025-08-02 09:39:58] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 09:39:58] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 3 registros de movimento carregados
+[2025-08-02 09:39:58] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 09:39:58] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo /tmp/tmpv14if72a.txt carregado e validado com sucesso
+[2025-08-02 09:39:58] [INFO] [log_operacao] [SELECAO_POR_VALOR] Iniciando seleção por valor: 171.00
+[2025-08-02 09:39:58] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 2 (não selecionado)
+[2025-08-02 09:39:58] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 1 (não selecionado)
+[2025-08-02 09:39:58] [INFO] [log_operacao] [SELECAO_POR_VALOR] 1 registro(s) mantido(s), 2 excluído(s), soma: 171.00
+[2025-08-02 09:40:44] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo /tmp/tmp1r9dpqcg.txt
+[2025-08-02 09:40:44] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 09:40:44] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 2 registros de movimento carregados
+[2025-08-02 09:40:44] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 09:40:44] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo /tmp/tmp1r9dpqcg.txt carregado e validado com sucesso
+[2025-08-02 09:40:44] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo /tmp/tmplfyz6z2x.txt
+[2025-08-02 09:40:44] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 09:40:44] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 2 registros de movimento carregados
+[2025-08-02 09:40:44] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 09:40:44] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo /tmp/tmplfyz6z2x.txt carregado e validado com sucesso
+[2025-08-02 09:40:44] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo /tmp/tmpy0qrdplu.txt
+[2025-08-02 09:40:44] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 09:40:44] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 2 registros de movimento carregados
+[2025-08-02 09:40:44] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 09:40:44] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo /tmp/tmpy0qrdplu.txt carregado e validado com sucesso
+[2025-08-02 09:40:44] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo /tmp/tmp8db0l08i.txt
+[2025-08-02 09:40:44] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 09:40:44] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 3 registros de movimento carregados
+[2025-08-02 09:40:44] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 09:40:44] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo /tmp/tmp8db0l08i.txt carregado e validado com sucesso
+[2025-08-02 09:40:44] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo /tmp/tmpt3mruw0j.txt
+[2025-08-02 09:40:44] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 09:40:44] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 3 registros de movimento carregados
+[2025-08-02 09:40:44] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 09:40:44] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo /tmp/tmpt3mruw0j.txt carregado e validado com sucesso
+[2025-08-02 09:40:44] [INFO] [log_operacao] [SELECAO_POR_VALOR] Iniciando seleção por valor: 171.00
+[2025-08-02 09:40:44] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 2 (não selecionado)
+[2025-08-02 09:40:44] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 1 (não selecionado)
+[2025-08-02 09:40:44] [INFO] [log_operacao] [SELECAO_POR_VALOR] 1 registro(s) mantido(s), 2 excluído(s), soma: 171.00
+[2025-08-02 15:25:46] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo rc160625.008
+[2025-08-02 15:25:46] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 15:25:46] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 180 registros de movimento carregados
+[2025-08-02 15:25:46] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 15:25:46] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rc160625.008 carregado e validado com sucesso
+[2025-08-02 15:26:22] [INFO] [log_operacao] [SELECAO_POR_VALOR] Iniciando seleção por valor: 25558.25
+[2025-08-02 16:14:47] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo rc160625.008
+[2025-08-02 16:14:47] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 16:14:47] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 180 registros de movimento carregados
+[2025-08-02 16:14:47] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 16:14:47] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rc160625.008 carregado e validado com sucesso
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Iniciando seleção por valor: 25558.25
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 179 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 178 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 177 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 176 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 175 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 174 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 173 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 172 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 171 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 170 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 169 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 168 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 167 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 166 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 165 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 164 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 163 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 162 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 161 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 160 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 159 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 158 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 157 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 156 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 155 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 154 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 153 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 152 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 151 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 150 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 149 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 148 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 147 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 146 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 145 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 144 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 143 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 142 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 140 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 139 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 138 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 137 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 136 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 135 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 134 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 133 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 132 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 131 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 130 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 129 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 128 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 127 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 126 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 125 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 124 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 123 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 122 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 121 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 120 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 119 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 118 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 117 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 116 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 115 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 114 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 113 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 112 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 111 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 110 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 109 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 108 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 107 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 106 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 105 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 104 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 103 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 102 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 101 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 100 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 98 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 97 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 96 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 95 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 94 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 93 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 92 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 91 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 90 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 88 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 87 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 86 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 85 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 84 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 83 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 82 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 81 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 80 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 79 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 78 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 77 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 76 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 75 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 74 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 73 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 72 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 71 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 70 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 69 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 68 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 67 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 66 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 65 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 64 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 63 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 61 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 60 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 59 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 58 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 57 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 56 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 55 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 54 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 53 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 52 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 51 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 50 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 49 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 48 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 47 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 46 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 45 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 44 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 43 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 42 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 41 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 40 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 39 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 37 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 36 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 35 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 34 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 33 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 32 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 31 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 30 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 29 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 28 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 27 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 26 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 25 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 24 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 23 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 22 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 21 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 20 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 19 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 18 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 17 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 16 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 15 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 14 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 13 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 12 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 11 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 10 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 7 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 6 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 5 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 4 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 3 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 2 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 1 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 0 (não selecionado)
+[2025-08-02 16:15:23] [INFO] [log_operacao] [SELECAO_POR_VALOR] 7 registro(s) mantido(s), 173 excluído(s), soma: 25812.00, tempo: 0.02s
+[2025-08-02 16:19:25] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo /tmp/tmpg2kq9c_x.txt
+[2025-08-02 16:19:25] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 16:19:25] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 3 registros de movimento carregados
+[2025-08-02 16:19:25] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 16:19:25] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo /tmp/tmpg2kq9c_x.txt carregado e validado com sucesso
+[2025-08-02 16:19:25] [INFO] [log_operacao] [SELECAO_POR_VALOR] Iniciando seleção por valor exato: 171.00
+[2025-08-02 16:19:25] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 2 (não selecionado)
+[2025-08-02 16:19:25] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 1 (não selecionado)
+[2025-08-02 16:19:25] [INFO] [log_operacao] [SELECAO_POR_VALOR] 1 registro(s) mantido(s), 2 excluído(s), soma: 171.00, tempo: 0.00s
+[2025-08-02 16:20:18] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo rc160625.008
+[2025-08-02 16:20:18] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 16:20:18] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 180 registros de movimento carregados
+[2025-08-02 16:20:18] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 16:20:18] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rc160625.008 carregado e validado com sucesso
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Iniciando seleção por valor exato: 25558.25
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 179 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 178 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 177 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 176 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 175 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 174 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 173 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 172 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 171 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 170 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 169 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 168 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 167 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 165 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 164 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 163 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 162 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 161 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 160 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 159 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 158 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 157 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 156 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 155 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 154 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 153 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 152 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 151 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 150 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 149 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 148 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 147 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 146 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 145 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 144 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 143 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 142 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 140 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 139 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 138 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 137 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 136 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 135 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 134 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 133 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 132 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 131 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 130 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 129 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 128 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 127 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 126 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 125 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 124 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 123 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 122 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 121 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 120 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 119 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 118 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 117 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 116 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 115 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 114 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 113 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 112 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 111 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 109 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 108 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 107 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 106 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 105 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 104 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 103 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 102 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 101 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 100 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 99 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 98 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 97 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 96 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 95 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 94 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 93 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 92 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 91 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 90 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 88 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 87 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 86 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 85 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 84 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 83 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 82 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 81 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 80 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 79 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 78 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 76 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 75 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 74 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 73 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 72 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 71 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 70 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 69 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 68 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 67 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 66 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 65 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 64 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 63 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 62 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 61 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 60 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 59 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 58 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 57 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 56 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 55 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 54 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 53 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 52 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 51 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 50 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 49 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 48 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 47 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 46 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 45 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 44 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 43 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 42 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 41 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 40 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 39 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 38 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 37 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 36 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 35 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 34 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 33 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 32 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 31 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 30 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 29 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 28 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 27 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 26 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 25 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 24 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 23 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 22 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 21 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 20 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 19 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 18 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 17 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 15 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 14 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 13 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 12 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 11 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 10 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 7 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 6 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 5 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 4 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 3 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 2 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 1 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 0 (não selecionado)
+[2025-08-02 16:20:38] [INFO] [log_operacao] [SELECAO_POR_VALOR] 8 registro(s) mantido(s), 172 excluído(s), soma: 25558.26, tempo: 0.02s
+[2025-08-02 16:23:10] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo rc160625.008
+[2025-08-02 16:23:10] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 16:23:10] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 180 registros de movimento carregados
+[2025-08-02 16:23:10] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 16:23:10] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rc160625.008 carregado e validado com sucesso
+[2025-08-02 16:23:10] [INFO] [log_operacao] [SELECAO_POR_VALOR] Iniciando seleção por valor exato: 25558.25
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 179 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 178 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 177 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 176 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 175 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 174 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 173 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 172 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 171 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 170 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 169 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 166 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 165 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 164 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 163 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 162 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 161 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 160 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 159 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 158 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 157 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 156 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 155 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 154 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 153 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 152 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 151 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 150 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 149 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 148 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 147 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 146 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 145 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 143 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 142 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 140 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 139 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 138 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 137 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 136 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 135 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 134 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 133 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 132 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 131 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 130 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 129 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 128 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 127 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 126 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 125 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 124 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 123 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 122 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 121 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 120 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 119 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 118 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 117 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 116 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 115 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 114 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 113 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 112 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 110 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 109 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 108 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 107 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 106 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 105 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 104 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 103 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 102 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 101 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 100 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 99 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 98 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 97 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 96 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 95 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 94 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 93 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 92 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 91 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 90 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 88 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 87 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 86 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 85 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 84 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 83 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 82 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 81 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 80 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 79 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 78 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 77 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 76 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 74 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 73 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 72 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 71 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 70 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 69 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 68 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 67 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 66 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 65 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 64 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 63 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 62 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 61 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 59 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 58 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 57 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 56 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 55 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 54 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 53 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 52 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 51 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 50 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 49 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 48 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 47 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 46 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 45 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 44 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 43 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 42 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 41 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 40 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 39 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 38 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 37 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 36 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 35 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 34 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 33 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 32 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 31 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 30 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 29 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 28 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 27 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 26 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 25 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 24 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 23 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 22 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 21 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 20 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 19 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 18 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 17 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 16 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 15 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 14 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 13 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 12 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 11 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 10 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 7 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 6 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 5 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 4 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 3 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 2 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 1 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] Excluindo registro 0 (não selecionado)
+[2025-08-02 16:23:11] [INFO] [log_operacao] [SELECAO_POR_VALOR] 10 registro(s) mantido(s), 170 excluído(s), soma: 25558.25, tempo: 0.64s
+[2025-08-02 16:29:21] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo rc160625.008
+[2025-08-02 16:29:21] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 16:29:21] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 180 registros de movimento carregados
+[2025-08-02 16:29:21] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 16:29:21] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rc160625.008 carregado e validado com sucesso
+[2025-08-02 16:29:31] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Iniciando seleção manual de registros
+[2025-08-02 16:31:11] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo /tmp/tmpt2v5_dzr
+[2025-08-02 16:31:11] [INFO] [log_operacao] [ERRO_VALIDACAO] Linha 1 tem 104 caracteres, deveria ter 91
+[2025-08-02 16:31:50] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo /tmp/tmpxty2u2_c
+[2025-08-02 16:31:50] [INFO] [log_operacao] [ERRO_VALIDACAO] Linha 1 tem 93 caracteres, deveria ter 91
+[2025-08-02 16:32:41] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo /tmp/tmpk0fovcos
+[2025-08-02 16:32:41] [INFO] [log_operacao] [ERRO_VALIDACAO] Linha 1 tem 96 caracteres, deveria ter 91
+[2025-08-02 16:34:11] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo rc160625.008.teste
+[2025-08-02 16:34:11] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 16:34:11] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 180 registros de movimento carregados
+[2025-08-02 16:34:11] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 16:34:11] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rc160625.008.teste carregado e validado com sucesso
+[2025-08-02 16:34:11] [INFO] [log_operacao] [SALVAR_ARQUIVO] Iniciando salvamento do arquivo em rc160625.008.teste.modificado
+[2025-08-02 16:34:11] [INFO] [log_operacao] [SALVAR_ARQUIVO] Arquivo salvo com sucesso em rc160625.008.teste.modificado
+[2025-08-02 16:34:11] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo rc160625.008.teste.modificado
+[2025-08-02 16:34:11] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 16:34:11] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 60 registros de movimento carregados
+[2025-08-02 16:34:11] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 16:34:11] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rc160625.008.teste.modificado carregado e validado com sucesso
+[2025-08-02 16:34:56] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo rc160625.008
+[2025-08-02 16:34:56] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 16:34:56] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 180 registros de movimento carregados
+[2025-08-02 16:34:56] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 16:34:56] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rc160625.008 carregado e validado com sucesso
+[2025-08-02 16:35:01] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Iniciando seleção manual de registros
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 179 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 178 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 177 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 176 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 175 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 174 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 173 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 172 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 171 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 170 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 169 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 168 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 167 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 166 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 165 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 164 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 163 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 162 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 161 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 160 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 159 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 157 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 156 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 155 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 154 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 153 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 152 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 151 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 150 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 149 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 148 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 147 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 146 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 145 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 144 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 143 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 142 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 141 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 140 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 139 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 137 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 135 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 133 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 132 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 131 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 130 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 127 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 126 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 125 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 124 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 123 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 122 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 121 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 119 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 118 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 117 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 116 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 115 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 114 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 112 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 111 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 110 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 109 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 108 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 107 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 106 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 105 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 104 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 103 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 102 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 98 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 97 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 96 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 95 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 94 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 93 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 92 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 90 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 89 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 88 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 87 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 86 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 85 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 84 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 83 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 82 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 80 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 79 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 78 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 77 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 76 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 75 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 74 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 73 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 72 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 71 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 70 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 69 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 68 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 67 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 66 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 65 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 64 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 63 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 62 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 61 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 60 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 59 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 58 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 57 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 55 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 54 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 53 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 52 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 51 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 49 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 48 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 47 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 46 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 45 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 44 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 43 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 42 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 41 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 40 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 39 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 38 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 37 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 36 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 35 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 34 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 33 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 32 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 31 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 30 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 29 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 28 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 27 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 26 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 25 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 24 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 23 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 22 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 21 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 20 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 19 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 18 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 17 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 16 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 15 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 14 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 13 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 12 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 11 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 10 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 9 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 8 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 7 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 6 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 5 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 4 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 2 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Excluindo registro 0 (não selecionado)
+[2025-08-02 16:43:47] [INFO] [log_operacao] [ESCOLHER_REGISTROS] 18 registro(s) mantido(s), 163 excluído(s), tempo: 526.09s
+[2025-08-02 16:44:08] [INFO] [log_operacao] [SALVAR_ARQUIVO] Iniciando salvamento do arquivo em PM160625.008
+[2025-08-02 16:44:08] [INFO] [log_operacao] [SALVAR_ARQUIVO] Arquivo salvo com sucesso em PM160625.008
+[2025-08-02 16:57:22] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo rc160625.008
+[2025-08-02 16:57:22] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 16:57:22] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 180 registros de movimento carregados
+[2025-08-02 16:57:22] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 16:57:22] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rc160625.008 carregado e validado com sucesso
+[2025-08-02 17:48:35] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo rc160625.008
+[2025-08-02 17:48:35] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 17:48:35] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 180 registros de movimento carregados
+[2025-08-02 17:48:35] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 17:48:35] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rc160625.008 carregado e validado com sucesso
+[2025-08-02 17:59:21] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo rc160625.008
+[2025-08-02 17:59:21] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 17:59:21] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 180 registros de movimento carregados
+[2025-08-02 17:59:21] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 17:59:21] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rc160625.008 carregado e validado com sucesso
