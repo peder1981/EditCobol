@@ -34,6 +34,7 @@ class PlanilhaRegistros:
         self.filtros = {}
         self.modo_somente_leitura = modo_somente_leitura
         self.console = Console()
+        self.acao_executada = None
         
         # Se não houver registros, ajustar total de páginas
         if self.total_paginas == 0:
@@ -85,12 +86,8 @@ class PlanilhaRegistros:
         # Retornar registros da página atual
         return registros_filtrados[inicio:fim]
     
-    def gerar_tabela_formatada(self):
-        """Gera a tabela formatada como texto simples para exibição no prompt_toolkit"""
-        # Obter registros da página atual
-        registros_pagina = self.obter_registros_pagina()
-        
-        # Criar linhas formatadas para prompt_toolkit
+    def gerar_cabecalho(self):
+        """Gera o cabeçalho da tabela"""
         linhas = []
         
         # Título
@@ -112,6 +109,23 @@ class PlanilhaRegistros:
         # Separador
         separador = [("fg:ansiblue", "-" * 85)]
         linhas.append(separador)
+        
+        # Formatar como uma única lista plana de tuplas (estilo, texto)
+        resultado = []
+        for linha in linhas:
+            if linha:  # Se a linha não estiver vazia
+                resultado.extend(linha)
+            resultado.append(('', '\n'))  # Adicionar quebra de linha após cada linha
+        
+        return resultado
+    
+    def gerar_registros(self):
+        """Gera a área de registros da tabela (parte paginada)"""
+        # Obter registros da página atual
+        registros_pagina = self.obter_registros_pagina()
+        
+        # Criar linhas formatadas para prompt_toolkit
+        linhas = []
         
         # Registros
         for i, registro in enumerate(registros_pagina):
@@ -136,8 +150,21 @@ class PlanilhaRegistros:
         if not registros_pagina:
             linhas.append([("fg:ansired", "Nenhum registro encontrado")])
         
+        # Formatar como uma única lista plana de tuplas (estilo, texto)
+        resultado = []
+        for linha in linhas:
+            if linha:  # Se a linha não estiver vazia
+                resultado.extend(linha)
+            resultado.append(('', '\n'))  # Adicionar quebra de linha após cada linha
+        
+        return resultado
+    
+    def gerar_rodape(self):
+        """Gera o rodapé da tabela com totalizadores, teclas e ações rápidas"""
+        linhas = []
+        
         # Separador antes do rodapé
-        linhas.append([])
+        separador = [("fg:ansiblue", "-" * 85)]
         linhas.append(separador)
         linhas.append([])
         
@@ -156,6 +183,10 @@ class PlanilhaRegistros:
             linhas.append([("fg:ansiwhite", "Teclas: ↑/↓: Navegar | PgUp/PgDn: Mudar página | Enter: Selecionar | q: Sair")])
         else:
             linhas.append([("fg:ansiwhite", "Teclas: ↑/↓: Navegar | PgUp/PgDn: Mudar página | Espaço: Selecionar | Enter: Menu | q: Sair")])
+            linhas.append([])
+            linhas.append([("fg:ansiyellow", "Ações rápidas:")])
+            linhas.append([("fg:ansiwhite", "F2: Editar registro atual | F3: Excluir selecionados | F4: Manter selecionados")])
+            linhas.append([("fg:ansiwhite", "F5: Selecionar por valor | F6: Excluir por adquirente | F7: Salvar | F8: Salvar como")])
         
         # Formatar como uma única lista plana de tuplas (estilo, texto)
         resultado = []
@@ -164,6 +195,15 @@ class PlanilhaRegistros:
                 resultado.extend(linha)
             resultado.append(('', '\n'))  # Adicionar quebra de linha após cada linha
         
+        return resultado
+        
+    def gerar_tabela_formatada(self):
+        """Gera a tabela formatada como texto simples para exibição no prompt_toolkit"""
+        # Este método está mantido por compatibilidade, mas não é mais usado diretamente
+        resultado = []
+        resultado.extend(self.gerar_cabecalho())
+        resultado.extend(self.gerar_registros())
+        resultado.extend(self.gerar_rodape())
         return resultado
     
     def navegar_cursor(self, direcao):
@@ -231,6 +271,7 @@ class PlanilhaRegistros:
         """Executa a interface interativa da planilha usando prompt_toolkit"""
         # Inicializar resultado
         self.resultado = None
+        self.acao_executada = None
         
         # Criar bindings de teclas
         bindings = KeyBindings()
@@ -282,6 +323,80 @@ class PlanilhaRegistros:
             self.deselecionar_todos()
             event.app.invalidate()
         
+        # Teclas de função para ações diretas
+        @bindings.add('f2')
+        def _(event):
+            """Editar registro atual"""
+            if self.modo_somente_leitura:
+                return
+                
+            # Obter índice global do registro sob o cursor
+            indice_global = self.pagina_atual * self.registros_por_pagina + self.cursor_pos
+            if indice_global < self.total_registros:
+                self.resultado = {"acao": "editar", "indice": indice_global}
+                self.acao_executada = "editar"
+                event.app.exit()
+        
+        @bindings.add('f3')
+        def _(event):
+            """Excluir registros selecionados"""
+            if self.modo_somente_leitura or not self.registros_selecionados:
+                return
+                
+            event.app.exit()
+            self.excluir_selecionados()
+            self.acao_executada = "excluir"
+        
+        @bindings.add('f4')
+        def _(event):
+            """Manter apenas registros selecionados"""
+            if self.modo_somente_leitura or not self.registros_selecionados:
+                return
+                
+            event.app.exit()
+            self.manter_apenas_selecionados()
+            self.acao_executada = "manter"
+        
+        @bindings.add('f5')
+        def _(event):
+            """Selecionar por valor"""
+            if self.modo_somente_leitura:
+                return
+                
+            event.app.exit()
+            self.resultado = {"acao": "selecionar_por_valor"}
+            self.acao_executada = "selecionar_por_valor"
+        
+        @bindings.add('f6')
+        def _(event):
+            """Excluir por adquirente"""
+            if self.modo_somente_leitura:
+                return
+                
+            event.app.exit()
+            self.resultado = {"acao": "excluir_por_adquirente"}
+            self.acao_executada = "excluir_por_adquirente"
+        
+        @bindings.add('f7')
+        def _(event):
+            """Salvar arquivo"""
+            if self.modo_somente_leitura:
+                return
+                
+            event.app.exit()
+            self.resultado = {"acao": "salvar"}
+            self.acao_executada = "salvar"
+        
+        @bindings.add('f8')
+        def _(event):
+            """Salvar como"""
+            if self.modo_somente_leitura:
+                return
+                
+            event.app.exit()
+            self.resultado = {"acao": "salvar_como"}
+            self.acao_executada = "salvar_como"
+        
         @bindings.add('enter')
         def _(event):
             """Exibir menu de operações ou selecionar registro"""
@@ -295,23 +410,41 @@ class PlanilhaRegistros:
                     event.app.exit()
                 return
             
-            # No modo normal, mostrar menu de operações
+            # No modo normal, definir resultado para mostrar menu de operações
+            if self.registros_selecionados:
+                self.resultado = {"acao": "menu_operacoes"}
             event.app.exit()
-            self.exibir_menu_operacoes()
-            # Reiniciar a aplicação após o menu
-            self.executar()
         
-        # Criar controle de texto formatado
-        text_control = FormattedTextControl(lambda: self.gerar_tabela_formatada())
+        # Criar controles para cada seção
+        cabecalho_control = FormattedTextControl(lambda: self.gerar_cabecalho())
+        registros_control = FormattedTextControl(lambda: self.gerar_registros())
+        rodape_control = FormattedTextControl(lambda: self.gerar_rodape())
         
-        # Criar janela simples
-        window = Window(
-            content=text_control,
+        # Criar janelas para cada seção
+        cabecalho_window = Window(
+            content=cabecalho_control,
+            wrap_lines=False,
+            height=5  # Altura fixa para o cabeçalho
+        )
+        
+        registros_window = Window(
+            content=registros_control,
             wrap_lines=False
         )
         
-        # Criar layout
-        root_container = HSplit([window])
+        rodape_window = Window(
+            content=rodape_control,
+            wrap_lines=False,
+            height=10  # Altura fixa para o rodapé
+        )
+        
+        # Criar layout com áreas fixas e área paginada
+        root_container = HSplit([
+            cabecalho_window,
+            registros_window,
+            rodape_window
+        ])
+        
         layout = Layout(root_container)
         
         # Limpar a tela antes de exibir
@@ -328,34 +461,127 @@ class PlanilhaRegistros:
         return self.resultado
     
     def exibir_menu_operacoes(self):
-        """Exibe menu de operações em lote"""
-        # Para o menu de operações, vamos usar a console do rich
-        # pois o prompt_toolkit não é ideal para entrada de texto
-        self.console.clear()
-        self.console.print("Operações em Lote", style="bold underline")
-        self.console.print(f"Registros selecionados: {len(self.registros_selecionados)}")
-        self.console.print("")
-        self.console.print("1. Excluir registros selecionados")
-        self.console.print("2. Manter apenas registros selecionados")
-        self.console.print("3. Voltar")
+        """Exibe menu de operações em lote usando prompt_toolkit"""
+        # Verificar se há registros selecionados
+        if not self.registros_selecionados:
+            from prompt_toolkit.shortcuts import message_dialog
+            message_dialog(
+                title="Aviso",
+                text="Nenhum registro selecionado. Selecione registros usando a tecla de espaço.",
+            ).run()
+            return
+            
+        from prompt_toolkit import Application
+        from prompt_toolkit.layout import Layout, HSplit, Window
+        from prompt_toolkit.layout.controls import FormattedTextControl
+        from prompt_toolkit.key_binding import KeyBindings
+        from prompt_toolkit.formatted_text import FormattedText
         
-        opcao = self.console.input("\nEscolha uma opção: ")
+        # Definir opções do menu
+        opcoes = [
+            "Excluir registros selecionados",
+            "Manter apenas registros selecionados",
+            "Voltar"
+        ]
         
-        if opcao == '1':
+        # Inicializar seleção
+        opcao_selecionada = [0]  # Lista para permitir modificação dentro das funções
+        resultado = [None]  # Lista para armazenar resultado
+        
+        # Função para renderizar o menu
+        def renderizar_menu():
+            titulo = FormattedText([("fg:ansiyellow bold", "\n  Operações em Lote\n")])
+            info = FormattedText([("fg:ansiwhite", f"  Registros selecionados: {len(self.registros_selecionados)}\n\n")])
+            
+            # Formatar opções
+            opcoes_formatadas = []
+            for i, opcao in enumerate(opcoes):
+                if i == opcao_selecionada[0]:
+                    # Opção selecionada
+                    opcoes_formatadas.append(("fg:ansigreen reverse", f"  > {opcao}\n"))
+                else:
+                    # Opção normal
+                    opcoes_formatadas.append(("fg:ansiwhite", f"    {opcao}\n"))
+            
+            # Adicionar instruções
+            instrucoes = FormattedText([("fg:ansiwhite", "\n  Use as setas para navegar e Enter para selecionar")])
+            
+            # Combinar tudo
+            return titulo + info + FormattedText(opcoes_formatadas) + instrucoes
+        
+        # Criar controle de texto formatado
+        controle_texto = FormattedTextControl(renderizar_menu)
+        
+        # Criar janela
+        janela = Window(content=controle_texto)
+        
+        # Criar layout
+        layout = Layout(HSplit([janela]))
+        
+        # Criar bindings de teclas
+        bindings = KeyBindings()
+        
+        @bindings.add('up')
+        def _(event):
+            """Navegar para cima"""
+            opcao_selecionada[0] = max(0, opcao_selecionada[0] - 1)
+            controle_texto.text = renderizar_menu()
+        
+        @bindings.add('down')
+        def _(event):
+            """Navegar para baixo"""
+            opcao_selecionada[0] = min(len(opcoes) - 1, opcao_selecionada[0] + 1)
+            controle_texto.text = renderizar_menu()
+        
+        @bindings.add('enter')
+        def _(event):
+            """Selecionar opção"""
+            resultado[0] = opcao_selecionada[0]
+            event.app.exit()
+        
+        @bindings.add('escape')
+        def _(event):
+            """Voltar"""
+            resultado[0] = len(opcoes) - 1  # Última opção (Voltar)
+            event.app.exit()
+        
+        # Criar e executar aplicação
+        app = Application(
+            layout=layout,
+            key_bindings=bindings,
+            full_screen=True,
+            mouse_support=True
+        )
+        
+        app.run()
+        
+        # Processar resultado
+        if resultado[0] == 0:  # Excluir registros selecionados
             self.excluir_selecionados()
-        elif opcao == '2':
+        elif resultado[0] == 1:  # Manter apenas registros selecionados
             self.manter_apenas_selecionados()
-        # Opção 3 apenas volta para a planilha
+        # Opção 2 (Voltar) não faz nada
     
     def excluir_selecionados(self):
-        """Exclui os registros selecionados"""
+        """Exclui os registros selecionados usando prompt_toolkit"""
+        from prompt_toolkit.shortcuts import message_dialog, yes_no_dialog
+        
         if not self.registros_selecionados:
-            self.console.print("Nenhum registro selecionado.", style="bold red")
-            self.console.input("Pressione Enter para continuar...")
+            message_dialog(
+                title="Aviso",
+                text="Nenhum registro selecionado.",
+            ).run()
             return
         
-        confirmacao = self.console.input(f"Tem certeza que deseja excluir {len(self.registros_selecionados)} registros? (s/N): ")
-        if confirmacao.lower() != 's':
+        # Confirmação
+        confirmado = yes_no_dialog(
+            title="Confirmação",
+            text=f"Tem certeza que deseja excluir {len(self.registros_selecionados)} registros?",
+            yes_text="Sim",
+            no_text="Não",
+        ).run()
+        
+        if not confirmado:
             return
         
         # Converter para lista ordenada decrescente para evitar problemas de índice
@@ -372,27 +598,45 @@ class PlanilhaRegistros:
         # Limpar seleções
         self.registros_selecionados.clear()
         
-        self.console.print(f"{len(indices_ordenados)} registros excluídos com sucesso.", style="bold green")
-        self.console.input("Pressione Enter para continuar...")
+        # Mensagem de sucesso
+        message_dialog(
+            title="Sucesso",
+            text=f"{len(indices_ordenados)} registros excluídos com sucesso.",
+        ).run()
     
     def manter_apenas_selecionados(self):
-        """Mantém apenas os registros selecionados"""
+        """Mantém apenas os registros selecionados usando prompt_toolkit"""
+        from prompt_toolkit.shortcuts import message_dialog, yes_no_dialog
+        
         if not self.registros_selecionados:
-            self.console.print("Nenhum registro selecionado.", style="bold red")
-            self.console.input("Pressione Enter para continuar...")
+            message_dialog(
+                title="Aviso",
+                text="Nenhum registro selecionado.",
+            ).run()
             return
         
-        confirmacao = self.console.input(f"Tem certeza que deseja manter apenas {len(self.registros_selecionados)} registros? (s/N): ")
-        if confirmacao.lower() != 's':
+        # Confirmação
+        confirmado = yes_no_dialog(
+            title="Confirmação",
+            text=f"Tem certeza que deseja manter apenas {len(self.registros_selecionados)} registros?",
+            yes_text="Sim",
+            no_text="Não",
+        ).run()
+        
+        if not confirmado:
             return
         
-        # Converter para conjunto para verificação rápida
-        indices_selecionados = set(self.registros_selecionados)
+        # Identificar registros a serem mantidos
+        indices_manter = set(self.registros_selecionados)
         
-        # Excluir registros que NÃO estão selecionados
-        for i in range(len(self.arquivo.movimentos) - 1, -1, -1):
-            if i not in indices_selecionados:
-                del self.arquivo.movimentos[i]
+        # Identificar registros a serem removidos (em ordem decrescente)
+        indices_remover = sorted([i for i in range(len(self.arquivo.movimentos)) 
+                                 if i not in indices_manter and self.arquivo.movimentos[i].tipo == 'M'], 
+                                reverse=True)
+        
+        # Remover registros
+        for indice in indices_remover:
+            del self.arquivo.movimentos[indice]
         
         # Recalcular trailer
         self.arquivo.recalcular_trailer()
@@ -400,8 +644,11 @@ class PlanilhaRegistros:
         # Limpar seleções
         self.registros_selecionados.clear()
         
-        self.console.print(f"{len(indices_selecionados)} registros mantidos com sucesso.", style="bold green")
-        self.console.input("Pressione Enter para continuar...")
+        # Mensagem de sucesso
+        message_dialog(
+            title="Sucesso",
+            text=f"{len(indices_remover)} registros removidos. {len(indices_manter)} registros mantidos.",
+        ).run()
 
 
 def main():

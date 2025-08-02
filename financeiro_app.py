@@ -592,31 +592,10 @@ def selecionar_por_valor(arquivo: ArquivoMovimentacao, valor_desejado: float):
     print(f"Tempo de processamento: {tempo_total:.2f} segundos")
 
 def selecionar_arquivo() -> str:
-    """Permite ao usuário selecionar um arquivo"""
-    arquivos = [f for f in os.listdir('.') if os.path.isfile(f)]
-    
-    print("\nArquivos disponíveis:")
-    arquivos_validos = []
-    
-    for i, arquivo in enumerate(arquivos):
-        # Mostrar todos os arquivos, independentemente da extensão
-        print(f"{i + 1}. {arquivo}")
-        arquivos_validos.append(arquivo)
-    
-    if not arquivos_validos:
-        print("Nenhum arquivo encontrado no diretório.")
-        return None
-    
-    try:
-        escolha = int(input("\nSelecione um arquivo (número): ")) - 1
-        if 0 <= escolha < len(arquivos_validos):
-            return arquivos_validos[escolha]
-        else:
-            print("Opção inválida.")
-            return None
-    except ValueError:
-        print("Opção inválida.")
-        return None
+    """Permite ao usuário selecionar um arquivo usando interface TUI"""
+    from seletor_arquivo_tui import selecionar_arquivo_tui
+    return selecionar_arquivo_tui('.')
+
 
 def menu_principal():
     """Menu principal da aplicação usando interface TUI"""
@@ -642,9 +621,50 @@ def menu_principal():
                     input("Pressione Enter para continuar...")
         
         elif opcao == "visualizar_conteudo" and arquivo_atual:
-            # Usar a planilha para visualizar o conteúdo
-            planilha = PlanilhaRegistros(arquivo_atual, modo_somente_leitura=True)
-            planilha.executar()
+            # Usar a planilha para visualizar o conteúdo e permitir ações diretas
+            planilha = PlanilhaRegistros(arquivo_atual, modo_somente_leitura=False)
+            resultado = planilha.executar()
+            
+            # Processar resultado das ações diretas
+            if resultado and "acao" in resultado:
+                # Processar menu de operações em lote
+                if resultado["acao"] == "menu_operacoes":
+                    planilha.exibir_menu_operacoes()
+                    # Reexibir a planilha após as operações
+                    opcao = "visualizar_conteudo"
+                    continue
+                if resultado["acao"] == "editar" and "indice" in resultado:
+                    editar_movimento(arquivo_atual, resultado["indice"])
+                elif resultado["acao"] == "selecionar_por_valor":
+                    os.system('clear' if os.name == 'posix' else 'cls')
+                    print("=== Seleção por Valor ===")
+                    try:
+                        valor_str = input("\nDigite o valor desejado (ex: 2564.00): ")
+                        valor = float(valor_str)
+                        if valor > 0:
+                            selecionar_por_valor(arquivo_atual, valor)
+                        else:
+                            print("Valor inválido. Deve ser maior que zero.")
+                            input("Pressione Enter para continuar...")
+                    except ValueError:
+                        print("Valor inválido. Digite um número decimal.")
+                        input("Pressione Enter para continuar...")
+                elif resultado["acao"] == "excluir_por_adquirente":
+                    os.system('clear' if os.name == 'posix' else 'cls')
+                    print("=== Excluir por Adquirente ===")
+                    codigo = input("\nDigite o código do adquirente (2 dígitos): ")
+                    if len(codigo) == 2 and codigo.isdigit():
+                        excluir_por_adquirente(arquivo_atual, codigo)
+                    else:
+                        print("Código inválido. Deve ter 2 dígitos.")
+                        input("Pressione Enter para continuar...")
+                elif resultado["acao"] == "salvar":
+                    if arquivo_atual.caminho_arquivo:
+                        salvar_arquivo(arquivo_atual)
+                    else:
+                        salvar_arquivo_como(arquivo_atual)
+                elif resultado["acao"] == "salvar_como":
+                    salvar_arquivo_como(arquivo_atual)
         
         elif opcao == "editar_registro" and arquivo_atual:
             if arquivo_atual.movimentos:

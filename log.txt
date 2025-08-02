@@ -989,3 +989,93 @@
 [2025-08-02 17:59:21] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 180 registros de movimento carregados
 [2025-08-02 17:59:21] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
 [2025-08-02 17:59:21] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rc160625.008 carregado e validado com sucesso
+[2025-08-02 18:18:15] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo rc170625.008
+[2025-08-02 18:18:15] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 18:18:15] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 106 registros de movimento carregados
+[2025-08-02 18:18:15] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 18:18:15] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rc170625.008 carregado e validado com sucesso
+[2025-08-02 18:18:15] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rc170625.008 carregado com sucesso
+[2025-08-02 18:18:42] [INFO] [log_operacao] [ESCOLHER_REGISTROS] Iniciando seleção manual de registros
+[2025-08-02 18:24:31] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo rc160625.008
+[2025-08-02 18:24:31] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 18:24:31] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 180 registros de movimento carregados
+[2025-08-02 18:24:31] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 18:24:31] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rc160625.008 carregado e validado com sucesso
+[2025-08-02 18:24:31] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rc160625.008 carregado com sucesso
+[2025-08-02 18:31:49] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo rc160625.008
+[2025-08-02 18:31:49] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 18:31:49] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 180 registros de movimento carregados
+[2025-08-02 18:31:49] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 18:31:49] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rc160625.008 carregado e validado com sucesso
+[2025-08-02 18:31:49] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rc160625.008 carregado com sucesso
+[2025-08-02 18:32:01] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo rc040725.027
+[2025-08-02 18:32:01] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 18:32:01] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 39 registros de movimento carregados
+[2025-08-02 18:32:01] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 18:32:01] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rc040725.027 carregado e validado com sucesso
+[2025-08-02 18:32:01] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rc040725.027 carregado com sucesso
+[2025-08-02 18:32:05] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo rc040725.027
+[2025-08-02 18:32:05] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 18:32:05] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 39 registros de movimento carregados
+[2025-08-02 18:32:05] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 18:32:05] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rc040725.027 carregado e validado com sucesso
+[2025-08-02 18:32:05] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rc040725.027 carregado com sucesso
+[2025-08-02 18:32:07] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo rc040725.027
+[2025-08-02 18:32:07] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 18:32:07] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 39 registros de movimento carregados
+[2025-08-02 18:32:07] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 18:32:07] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rc040725.027 carregado e validado com sucesso
+[2025-08-02 18:32:07] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rc040725.027 carregado com sucesso
+[2025-08-02 18:52:39] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo rc170625.008
+[2025-08-02 18:52:39] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 18:52:39] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 106 registros de movimento carregados
+[2025-08-02 18:52:39] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 18:52:39] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rc170625.008 carregado e validado com sucesso
+[2025-08-02 18:52:39] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rc170625.008 carregado com sucesso
+[2025-08-02 18:57:22] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo rc040725.027
+[2025-08-02 18:57:22] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 18:57:22] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 39 registros de movimento carregados
+[2025-08-02 18:57:22] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 18:57:22] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rc040725.027 carregado e validado com sucesso
+[2025-08-02 18:57:22] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rc040725.027 carregado com sucesso
+[2025-08-02 18:57:42] [INFO] [log_operacao] [SALVAR_ARQUIVO] Iniciando salvamento do arquivo em teste.txt2
+[2025-08-02 18:57:42] [INFO] [log_operacao] [SALVAR_ARQUIVO] Arquivo salvo com sucesso em teste.txt2
+[2025-08-02 18:58:24] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo teste.txt2
+[2025-08-02 18:58:24] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 18:58:24] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 2 registros de movimento carregados
+[2025-08-02 18:58:24] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 18:58:24] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo teste.txt2 carregado e validado com sucesso
+[2025-08-02 18:58:24] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo teste.txt2 carregado com sucesso
+[2025-08-02 19:14:07] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo rc040725.027
+[2025-08-02 19:14:07] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 19:14:07] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 39 registros de movimento carregados
+[2025-08-02 19:14:07] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 19:14:07] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rc040725.027 carregado e validado com sucesso
+[2025-08-02 19:14:07] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rc040725.027 carregado com sucesso
+[2025-08-02 19:15:52] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo rc040725.027
+[2025-08-02 19:15:52] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 19:15:52] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 39 registros de movimento carregados
+[2025-08-02 19:15:52] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 19:15:52] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rc040725.027 carregado e validado com sucesso
+[2025-08-02 19:15:52] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rc040725.027 carregado com sucesso
+[2025-08-02 19:16:15] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo rc170625.008
+[2025-08-02 19:16:15] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 19:16:15] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 106 registros de movimento carregados
+[2025-08-02 19:16:15] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 19:16:15] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rc170625.008 carregado e validado com sucesso
+[2025-08-02 19:16:15] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rc170625.008 carregado com sucesso
+[2025-08-02 19:16:33] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo rc170625.008
+[2025-08-02 19:16:33] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-02 19:16:33] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 106 registros de movimento carregados
+[2025-08-02 19:16:33] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-02 19:16:33] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rc170625.008 carregado e validado com sucesso
+[2025-08-02 19:16:33] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rc170625.008 carregado com sucesso
+[2025-08-02 19:16:45] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 69 do adquirente 46
+[2025-08-02 19:16:45] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 68 do adquirente 46
+[2025-08-02 19:16:45] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 67 do adquirente 46
+[2025-08-02 19:16:45] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 66 do adquirente 46
+[2025-08-02 19:16:45] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 65 do adquirente 46
+[2025-08-02 19:16:45] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 64 do adquirente 46
+[2025-08-02 19:16:45] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 63 do adquirente 46
+[2025-08-02 19:16:45] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 61 do adquirente 46
+[2025-08-02 19:16:45] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] 8 registro(s) excluído(s) para o adquirente 46 e trailer recalculado
