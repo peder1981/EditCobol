@@ -1176,3 +1176,30 @@
 [2025-08-03 11:32:56] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo teste.027 carregado com sucesso
 [2025-08-03 11:33:43] [INFO] [log_operacao] [SALVAR_ARQUIVO] Iniciando salvamento do arquivo em teste.027
 [2025-08-03 11:33:43] [INFO] [log_operacao] [SALVAR_ARQUIVO] Arquivo salvo com sucesso em teste.027
+[2025-08-03 11:38:26] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo rc170625.008
+[2025-08-03 11:38:26] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-03 11:38:26] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 106 registros de movimento carregados
+[2025-08-03 11:38:26] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-03 11:38:26] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rc170625.008 carregado e validado com sucesso
+[2025-08-03 11:38:26] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rc170625.008 carregado com sucesso
+[2025-08-03 11:39:08] [INFO] [log_operacao] [SALVAR_ARQUIVO] Iniciando salvamento do arquivo em teste_bb.008
+[2025-08-03 11:39:08] [INFO] [log_operacao] [SALVAR_ARQUIVO] Arquivo salvo com sucesso em teste_bb.008
+[2025-08-03 11:39:08] [INFO] [log_operacao] [SALVAR_COMO] Arquivo salvo como 'teste_bb.008' com sucesso
+[2025-08-03 11:39:24] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo teste_bb.008
+[2025-08-03 11:39:24] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-03 11:39:24] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 103 registros de movimento carregados
+[2025-08-03 11:39:24] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-03 11:39:24] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo teste_bb.008 carregado e validado com sucesso
+[2025-08-03 11:39:24] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo teste_bb.008 carregado com sucesso
+[2025-08-03 11:39:46] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 66 do adquirente 46
+[2025-08-03 11:39:46] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 65 do adquirente 46
+[2025-08-03 11:39:46] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 64 do adquirente 46
+[2025-08-03 11:39:46] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 63 do adquirente 46
+[2025-08-03 11:39:46] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 62 do adquirente 46
+[2025-08-03 11:39:46] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 61 do adquirente 46
+[2025-08-03 11:39:46] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 60 do adquirente 46
+[2025-08-03 11:39:46] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 58 do adquirente 46
+[2025-08-03 11:39:46] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] 8 registro(s) excluído(s) para o adquirente 46 e trailer recalculado
+[2025-08-03 11:39:57] [INFO] [log_operacao] [SALVAR_ARQUIVO] Iniciando salvamento do arquivo em teste_bb.008
+[2025-08-03 11:39:57] [INFO] [log_operacao] [SALVAR_ARQUIVO] Arquivo salvo com sucesso em teste_bb.008
+[2025-08-03 11:39:57] [INFO] [log_operacao] [SALVAR_ARQUIVO] Arquivo salvo com sucesso em 'teste_bb.008'
