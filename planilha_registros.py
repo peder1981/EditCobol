@@ -587,7 +587,7 @@ class PlanilhaRegistros:
         confirmado = yes_no_dialog(
             title="Confirmação",
             text=f"Tem certeza que deseja excluir {len(self.registros_selecionados)} registros?"
-        ).run()
+        )
         
         if not confirmado:
             return
@@ -631,7 +631,7 @@ class PlanilhaRegistros:
         confirmado = yes_no_dialog(
             title="Confirmação",
             text=f"Tem certeza que deseja manter apenas {len(self.registros_selecionados)} registros e excluir todos os demais?"
-        ).run()
+        )
         
         if not confirmado:
             return

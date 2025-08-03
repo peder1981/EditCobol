@@ -255,6 +255,35 @@ class ArquivoMovimentacao:
 
 # Funções para manipulação do arquivo
 
+def salvar_arquivo_como(arquivo: ArquivoMovimentacao):
+    """Solicita ao usuário um novo nome de arquivo e salva o arquivo com esse nome"""
+    os.system('clear' if os.name == 'posix' else 'cls')
+    print("=== Salvar Como ===\n")
+    novo_nome = input("Digite o novo nome do arquivo: ")
+    if novo_nome:
+        try:
+            arquivo.salvar_arquivo(novo_nome)
+            log_operacao("SALVAR_COMO", f"Arquivo salvo como '{novo_nome}' com sucesso")
+            print(f"\nArquivo salvo como '{novo_nome}' com sucesso.")
+            input("Pressione Enter para continuar...")
+        except Exception as e:
+            log_operacao("ERRO_SALVAR_COMO", f"Erro ao salvar arquivo como '{novo_nome}': {e}")
+            print(f"\nErro ao salvar arquivo: {e}")
+            input("Pressione Enter para continuar...")
+
+def salvar_arquivo(arquivo: ArquivoMovimentacao):
+    """Salva o arquivo usando o caminho já definido"""
+    try:
+        arquivo.salvar_arquivo()
+        log_operacao("SALVAR_ARQUIVO", f"Arquivo salvo com sucesso em '{arquivo.caminho_arquivo}'")
+        print("\nArquivo salvo com sucesso.")
+        input("Pressione Enter para continuar...")
+    except Exception as e:
+        log_operacao("ERRO_SALVAR", f"Erro ao salvar arquivo: {e}")
+        print(f"\nErro ao salvar arquivo: {e}")
+        input("Pressione Enter para continuar...")
+
+
 def editar_movimento(arquivo: ArquivoMovimentacao, indice: int):
     """Edita um registro de movimento"""
     if 0 <= indice < len(arquivo.movimentos):

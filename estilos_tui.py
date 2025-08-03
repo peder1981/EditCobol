@@ -9,21 +9,21 @@ from prompt_toolkit.styles import Style
 # Cores padrão para toda a aplicação
 CORES = {
     # Cores de texto
-    'texto_normal': 'ansiwhite',
-    'texto_titulo': 'bold',
-    'texto_destaque': 'ansiblue',
-    'texto_sucesso': 'ansigreen',
-    'texto_erro': 'ansired',
-    'texto_aviso': 'ansiyellow',
+    'texto_normal': '#ffffff',  # Branco puro para melhor contraste
+    'texto_titulo': 'bold #ffffff',  # Branco puro em negrito para títulos
+    'texto_destaque': '#3498db',  # Azul mais vivo para destaque
+    'texto_sucesso': '#2ecc71',  # Verde mais vivo
+    'texto_erro': '#e74c3c',  # Vermelho mais vivo
+    'texto_aviso': '#f1c40f',  # Amarelo mais vivo
     'texto_desabilitado': 'ansigray',
     
     # Cores de fundo
     'fundo_normal': '',  # Fundo padrão do terminal
     'fundo_selecionado': 'reverse',  # Inverte cores para destacar seleção
-    'fundo_destaque': 'bg:ansiblue fg:ansiwhite',
+    'fundo_destaque': 'bg:#3498db fg:#ffffff',  # Melhorado contraste
     
     # Cores para separadores e bordas
-    'separador': 'ansiblue',
+    'separador': '#3498db',  # Azul mais vivo para separadores
 }
 
 # Estilos para elementos específicos
