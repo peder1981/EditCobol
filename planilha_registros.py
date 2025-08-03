@@ -16,6 +16,7 @@ from prompt_toolkit.key_binding import KeyBindings
 from prompt_toolkit.layout import Layout, HSplit, Window
 from prompt_toolkit.layout.controls import FormattedTextControl
 from prompt_toolkit.styles import Style
+from estilos_tui import CORES, ESTILOS, ESTILO_PROMPT_TOOLKIT
 
 
 class PlanilhaRegistros:
@@ -91,23 +92,23 @@ class PlanilhaRegistros:
         linhas = []
         
         # Título
-        linhas.append([("bold", f"=== Registros de Movimentação - Página {self.pagina_atual + 1}/{self.total_paginas} ===")])
+        linhas.append([(ESTILOS['titulo'], f"=== Registros de Movimentação - Página {self.pagina_atual + 1}/{self.total_paginas} ===")])
         linhas.append([])
         
         # Cabeçalho
         cabecalho = [
-            ("bold", f"{'#':^5}"),
-            ("bold", f"{'Sel':^5}"),
-            ("bold", f"{'Adquirente':^12}"),
-            ("bold", f"{'Data':^10}"),
-            ("bold", f"{'Cartão':^22}"),
-            ("bold", f"{'Valor':^14}"),
-            ("bold", f"{'CVNSU':^11}")
+            (ESTILOS['cabecalho_tabela'], f"{'#':^5}"),
+            (ESTILOS['cabecalho_tabela'], f"{'Sel':^5}"),
+            (ESTILOS['cabecalho_tabela'], f"{'Adquirente':^12}"),
+            (ESTILOS['cabecalho_tabela'], f"{'Data':^10}"),
+            (ESTILOS['cabecalho_tabela'], f"{'Cartão':^22}"),
+            (ESTILOS['cabecalho_tabela'], f"{'Valor':^14}"),
+            (ESTILOS['cabecalho_tabela'], f"{'CVNSU':^11}")
         ]
         linhas.append(cabecalho)
         
         # Separador
-        separador = [("fg:ansiblue", "-" * 85)]
+        separador = [(ESTILOS['separador'], "-" * 85)]
         linhas.append(separador)
         
         # Formatar como uma única lista plana de tuplas (estilo, texto)
@@ -133,7 +134,7 @@ class PlanilhaRegistros:
             selecionado = "✓" if indice_global in self.registros_selecionados else " "
             
             # Definir estilo baseado na posição do cursor
-            estilo = "reverse" if i == self.cursor_pos else ""
+            estilo = ESTILOS['item_selecionado'] if i == self.cursor_pos else ESTILOS['texto_normal']
             
             linha = [
                 (estilo, f"{indice_global:^5}"),
@@ -148,7 +149,7 @@ class PlanilhaRegistros:
         
         # Se não houver registros, mostrar mensagem
         if not registros_pagina:
-            linhas.append([("fg:ansired", "Nenhum registro encontrado")])
+            linhas.append([(ESTILOS['texto_erro'], "Nenhum registro encontrado")])
         
         # Formatar como uma única lista plana de tuplas (estilo, texto)
         resultado = []
@@ -164,29 +165,29 @@ class PlanilhaRegistros:
         linhas = []
         
         # Separador antes do rodapé
-        separador = [("fg:ansiblue", "-" * 85)]
+        separador = [(ESTILOS['separador'], "-" * 85)]
         linhas.append(separador)
         linhas.append([])
         
         # Rodapé com informações e ajuda
         total_selecionados = len(self.registros_selecionados)
-        linhas.append([("fg:ansigreen bold", f"Registros: {self.total_registros} | Selecionados: {total_selecionados} | Página: {self.pagina_atual + 1}/{self.total_paginas}")])
+        linhas.append([(ESTILOS['texto_destaque'], f"Registros: {self.total_registros} | Selecionados: {total_selecionados} | Página: {self.pagina_atual + 1}/{self.total_paginas}")])
         
         if self.filtros:
             filtros_ativos = ", ".join([f"{k}={v}" for k, v in self.filtros.items()])
-            linhas.append([("fg:ansiyellow", f"Filtros ativos: {filtros_ativos}")])
+            linhas.append([(ESTILOS['texto_aviso'], f"Filtros ativos: {filtros_ativos}")])
         
         linhas.append([])
         
         # Ajustar mensagem de ajuda conforme o modo
         if self.modo_somente_leitura:
-            linhas.append([("fg:ansiwhite", "Teclas: ↑/↓: Navegar | PgUp/PgDn: Mudar página | Enter: Selecionar | q: Sair")])
+            linhas.append([(ESTILOS['ajuda'], "Teclas: ↑/↓: Navegar | PgUp/PgDn: Mudar página | Enter: Selecionar | q: Sair")])
         else:
-            linhas.append([("fg:ansiwhite", "Teclas: ↑/↓: Navegar | PgUp/PgDn: Mudar página | Espaço: Selecionar | Enter: Menu | q: Sair")])
+            linhas.append([(ESTILOS['ajuda'], "Teclas: ↑/↓: Navegar | PgUp/PgDn: Mudar página | Espaço: Selecionar | Enter: Menu | q: Sair")])
             linhas.append([])
-            linhas.append([("fg:ansiyellow", "Ações rápidas:")])
-            linhas.append([("fg:ansiwhite", "F2: Editar registro atual | F3: Excluir selecionados | F4: Manter selecionados")])
-            linhas.append([("fg:ansiwhite", "F5: Selecionar por valor | F6: Excluir por adquirente | F7: Salvar | F8: Salvar como")])
+            linhas.append([(ESTILOS['texto_aviso'], "Ações rápidas:")])
+            linhas.append([(ESTILOS['ajuda'], "F2: Editar registro atual | F3: Excluir selecionados | F4: Manter selecionados")])
+            linhas.append([(ESTILOS['ajuda'], "F5: Selecionar por valor | F6: Excluir por adquirente | F7: Salvar | F8: Salvar como")])
         
         # Formatar como uma única lista plana de tuplas (estilo, texto)
         resultado = []
@@ -454,7 +455,8 @@ class PlanilhaRegistros:
         app = Application(
             layout=layout,
             key_bindings=bindings,
-            full_screen=True
+            full_screen=True,
+            style=ESTILO_PROMPT_TOOLKIT  # Aplicar estilo global
         )
         
         app.run()
@@ -490,21 +492,21 @@ class PlanilhaRegistros:
         
         # Função para renderizar o menu
         def renderizar_menu():
-            titulo = FormattedText([("fg:ansiyellow bold", "\n  Operações em Lote\n")])
-            info = FormattedText([("fg:ansiwhite", f"  Registros selecionados: {len(self.registros_selecionados)}\n\n")])
+            titulo = FormattedText([(ESTILOS['titulo'], "\n  Operações em Lote\n")])
+            info = FormattedText([(ESTILOS['texto_normal'], f"  Registros selecionados: {len(self.registros_selecionados)}\n\n")])
             
             # Formatar opções
             opcoes_formatadas = []
             for i, opcao in enumerate(opcoes):
                 if i == opcao_selecionada[0]:
                     # Opção selecionada
-                    opcoes_formatadas.append(("fg:ansigreen reverse", f"  > {opcao}\n"))
+                    opcoes_formatadas.append((ESTILOS['item_selecionado'], f"  > {opcao}\n"))
                 else:
                     # Opção normal
-                    opcoes_formatadas.append(("fg:ansiwhite", f"    {opcao}\n"))
+                    opcoes_formatadas.append((ESTILOS['texto_normal'], f"    {opcao}\n"))
             
             # Adicionar instruções
-            instrucoes = FormattedText([("fg:ansiwhite", "\n  Use as setas para navegar e Enter para selecionar")])
+            instrucoes = FormattedText([(ESTILOS['ajuda'], "\n  Use as setas para navegar e Enter para selecionar")])
             
             # Combinar tudo
             return titulo + info + FormattedText(opcoes_formatadas) + instrucoes
@@ -550,7 +552,8 @@ class PlanilhaRegistros:
             layout=layout,
             key_bindings=bindings,
             full_screen=True,
-            mouse_support=True
+            mouse_support=True,
+            style=ESTILO_PROMPT_TOOLKIT  # Aplicar estilo global
         )
         
         app.run()
@@ -598,14 +601,20 @@ class PlanilhaRegistros:
         # Limpar seleções
         self.registros_selecionados.clear()
         
-        # Mensagem de sucesso
-        message_dialog(
-            title="Sucesso",
-            text=f"{len(indices_ordenados)} registros excluídos com sucesso.",
-        ).run()
+        # Atualizar total de registros e páginas
+        self.total_registros = len(self.arquivo.movimentos)
+        self.total_paginas = max(1, (self.total_registros + self.registros_por_pagina - 1) // self.registros_por_pagina)
+        
+        # Ajustar página atual e cursor se necessário
+        if self.pagina_atual >= self.total_paginas:
+            self.pagina_atual = max(0, self.total_paginas - 1)
+        
+        registros_pagina = self.obter_registros_pagina()
+        if self.cursor_pos >= len(registros_pagina):
+            self.cursor_pos = max(0, len(registros_pagina) - 1)
     
     def manter_apenas_selecionados(self):
-        """Mantém apenas os registros selecionados usando prompt_toolkit"""
+        """Mantém apenas os registros selecionados, excluindo todos os demais"""
         from prompt_toolkit.shortcuts import message_dialog, yes_no_dialog
         
         if not self.registros_selecionados:
@@ -618,7 +627,7 @@ class PlanilhaRegistros:
         # Confirmação
         confirmado = yes_no_dialog(
             title="Confirmação",
-            text=f"Tem certeza que deseja manter apenas {len(self.registros_selecionados)} registros?",
+            text=f"Tem certeza que deseja manter apenas {len(self.registros_selecionados)} registros e excluir todos os demais?",
             yes_text="Sim",
             no_text="Não",
         ).run()
@@ -626,17 +635,11 @@ class PlanilhaRegistros:
         if not confirmado:
             return
         
-        # Identificar registros a serem mantidos
-        indices_manter = set(self.registros_selecionados)
+        # Obter registros selecionados
+        registros_para_manter = self.obter_registros_selecionados()
         
-        # Identificar registros a serem removidos (em ordem decrescente)
-        indices_remover = sorted([i for i in range(len(self.arquivo.movimentos)) 
-                                 if i not in indices_manter and self.arquivo.movimentos[i].tipo == 'M'], 
-                                reverse=True)
-        
-        # Remover registros
-        for indice in indices_remover:
-            del self.arquivo.movimentos[indice]
+        # Substituir lista de movimentos
+        self.arquivo.movimentos = registros_para_manter
         
         # Recalcular trailer
         self.arquivo.recalcular_trailer()
@@ -644,19 +647,22 @@ class PlanilhaRegistros:
         # Limpar seleções
         self.registros_selecionados.clear()
         
-        # Mensagem de sucesso
-        message_dialog(
-            title="Sucesso",
-            text=f"{len(indices_remover)} registros removidos. {len(indices_manter)} registros mantidos.",
-        ).run()
+        # Atualizar total de registros e páginas
+        self.total_registros = len(self.arquivo.movimentos)
+        self.total_paginas = max(1, (self.total_registros + self.registros_por_pagina - 1) // self.registros_por_pagina)
+        
+        # Ajustar página atual e cursor
+        self.pagina_atual = 0
+        self.cursor_pos = 0
 
 
-def main():
-    """Função principal para testar a planilha"""
-    # Esta função será usada para testar a planilha
-    # Na integração com o programa principal, será chamada de outra forma
-    pass
+def exibir_planilha_registros(arquivo_movimentacao, modo_somente_leitura=False):
+    """Função auxiliar para exibir a planilha de registros"""
+    planilha = PlanilhaRegistros(arquivo_movimentacao, modo_somente_leitura)
+    return planilha.executar()
 
 
 if __name__ == "__main__":
-    main()
+    # Teste da interface
+    print("Este módulo deve ser importado, não executado diretamente.")
+    sys.exit(1)

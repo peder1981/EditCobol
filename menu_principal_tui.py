@@ -12,6 +12,7 @@ from prompt_toolkit.layout.layout import Layout
 from prompt_toolkit.layout.controls import FormattedTextControl
 from prompt_toolkit.key_binding import KeyBindings
 from prompt_toolkit.key_binding.bindings.focus import focus_next, focus_previous
+from estilos_tui import ESTILOS, ESTILO_PROMPT_TOOLKIT
 
 class MenuPrincipalTUI:
     """Interface TUI para o menu principal da aplicação"""
@@ -42,19 +43,19 @@ class MenuPrincipalTUI:
         linhas = []
         
         # Título
-        linhas.append([("bold", "=== Editor de Arquivo de Movimentação Financeira ===")])
+        linhas.append([(ESTILOS['titulo'], "=== Editor de Arquivo de Movimentação Financeira ===")])
         linhas.append([])
         
         # Status do arquivo
         if self.arquivo_atual:
             nome_arquivo = os.path.basename(self.arquivo_atual.caminho_arquivo or "Sem nome")
             total_registros = len(self.arquivo_atual.movimentos)
-            linhas.append([("fg:ansigreen", f"Arquivo atual: {nome_arquivo} ({total_registros} registros)")])
+            linhas.append([(ESTILOS['texto_sucesso'], f"Arquivo atual: {nome_arquivo} ({total_registros} registros)")])
         else:
-            linhas.append([("fg:ansired", "Nenhum arquivo carregado")])
+            linhas.append([(ESTILOS['texto_erro'], "Nenhum arquivo carregado")])
         
         linhas.append([])
-        linhas.append([("fg:ansiblue", "Menu de Opções:")])
+        linhas.append([(ESTILOS['subtitulo'], "Menu de Opções:")])
         linhas.append([])
         
         # Opções do menu
@@ -64,16 +65,16 @@ class MenuPrincipalTUI:
             
             # Estilo baseado na posição do cursor e estado
             if i == self.cursor_pos:
-                estilo = "reverse"
+                estilo = ESTILOS['item_selecionado']
             elif desabilitado:
-                estilo = "fg:ansigray"
+                estilo = ESTILOS['texto_desabilitado']
             else:
-                estilo = ""
+                estilo = ESTILOS['texto_normal']
             
             linhas.append([(estilo, f" {i+1}. {texto}")])
         
         linhas.append([])
-        linhas.append([("fg:ansiwhite", "Teclas: ↑/↓: Navegar | Enter: Selecionar | q: Sair")])
+        linhas.append([(ESTILOS['ajuda'], "Teclas: ↑/↓: Navegar | Enter: Selecionar | q: Sair")])
         
         # Formatar como uma única lista plana de tuplas (estilo, texto)
         resultado = []
@@ -129,7 +130,8 @@ class MenuPrincipalTUI:
         app = Application(
             layout=layout,
             key_bindings=bindings,
-            full_screen=True
+            full_screen=True,
+            style=ESTILO_PROMPT_TOOLKIT
         )
         
         app.run()

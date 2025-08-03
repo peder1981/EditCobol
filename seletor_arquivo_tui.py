@@ -12,6 +12,7 @@ from prompt_toolkit.key_binding import KeyBindings
 from prompt_toolkit.layout import Layout, HSplit, Window
 from prompt_toolkit.layout.controls import FormattedTextControl
 from prompt_toolkit.styles import Style
+from estilos_tui import ESTILOS, ESTILO_PROMPT_TOOLKIT
 
 
 class SeletorArquivoTUI:
@@ -51,23 +52,23 @@ class SeletorArquivoTUI:
         linhas = []
         
         # Título
-        linhas.append([("bold", f"=== Seleção de Arquivo - Página {self.pagina_atual + 1}/{self.total_paginas} ===")])
+        linhas.append([(ESTILOS['titulo'], f"=== Seleção de Arquivo - Página {self.pagina_atual + 1}/{self.total_paginas} ===")])
         linhas.append([])
         
         # Cabeçalho
         linhas.append([
-            ("bold", f"{'#':^5}"),
-            ("bold", f"{'Nome do Arquivo':^40}"),
-            ("bold", f"{'Tamanho (bytes)':^15}")
+            (ESTILOS['cabecalho_tabela'], f"{'#':^5}"),
+            (ESTILOS['cabecalho_tabela'], f"{'Nome do Arquivo':^40}"),
+            (ESTILOS['cabecalho_tabela'], f"{'Tamanho (bytes)':^15}")
         ])
         
         # Separador
-        linhas.append([("", "-" * 65)])
+        linhas.append([(ESTILOS['separador'], "-" * 65)])
         
         # Conteúdo
         for i, arquivo in enumerate(arquivos_pagina):
             # Verificar se é a linha do cursor
-            estilo = "reverse" if i == self.cursor_pos else ""
+            estilo = ESTILOS['item_selecionado'] if i == self.cursor_pos else ESTILOS['texto_normal']
             
             # Obter tamanho do arquivo
             try:
@@ -84,12 +85,12 @@ class SeletorArquivoTUI:
         # Informações adicionais
         linhas.append([])
         if self.total_arquivos == 0:
-            linhas.append([("fg:ansired", "Nenhum arquivo encontrado no diretório.")])
+            linhas.append([(ESTILOS['texto_erro'], "Nenhum arquivo encontrado no diretório.")])
         else:
-            linhas.append([("", f"Total de arquivos: {self.total_arquivos}")])
+            linhas.append([(ESTILOS['texto_normal'], f"Total de arquivos: {self.total_arquivos}")])
         
         linhas.append([])
-        linhas.append([("fg:ansiwhite", "Teclas: ↑/↓: Navegar | PgUp/PgDn: Mudar página | Enter: Selecionar | q: Cancelar")])
+        linhas.append([(ESTILOS['ajuda'], "Teclas: ↑/↓: Navegar | PgUp/PgDn: Mudar página | Enter: Selecionar | q: Cancelar")])
         
         # Formatar como uma única lista plana de tuplas (estilo, texto)
         resultado = []
@@ -183,7 +184,8 @@ class SeletorArquivoTUI:
         app = Application(
             layout=layout,
             key_bindings=bindings,
-            full_screen=True
+            full_screen=True,
+            style=ESTILO_PROMPT_TOOLKIT
         )
         
         app.run()
