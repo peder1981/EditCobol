@@ -2,7 +2,7 @@
 
 ## Descrição Geral
 
-O projeto consiste em uma aplicação Python para manipulação de arquivos de movimentação financeira em formato de largura fixa, com funcionalidades avançadas de edição, validação, logging e backup.
+O projeto consiste em uma aplicação Python para manipulação de arquivos de movimentação financeira em formato de largura fixa, com funcionalidades avançadas de edição, validação, logging e backup. A interface utiliza o framework prompt_toolkit para criar uma experiência TUI (Text User Interface) interativa e responsiva no terminal.
 
 ## Funcionalidades Implementadas
 
@@ -10,10 +10,11 @@ O projeto consiste em uma aplicação Python para manipulação de arquivos de m
 - Carregamento e validação de arquivos de movimentação financeira
 - Exibição formatada do conteúdo do arquivo
 - Edição de registros individuais
-- Deleção de registros
+- Seleção e deleção de registros
 - Exclusão de registros por código de adquirente
+- Filtragem e seleção de registros por valor
 - Recálculo automático do trailer
-- Salvamento de arquivos
+- Salvamento de arquivos com confirmação
 
 ### 2. Validação de Estrutura
 - Verificação de tamanho de linhas (91 caracteres)
@@ -44,10 +45,27 @@ O projeto consiste em uma aplicação Python para manipulação de arquivos de m
 - Script de instalação (`install.sh`)
 - Script de execução (`run.sh`)
 - Link simbólico para acesso fácil (`editor-financeiro`)
+- Scripts de teste para validação de componentes (`teste_dialogos.py`, `teste_tui_adaptado.py`)
 
-### 7. Documentação
+### 7. Interface TUI (`menu_principal_tui.py`, `seletor_arquivo_tui.py`, `planilha_registros.py`)
+- Menu principal interativo com navegação por teclado
+- Seletor de arquivos com navegação e paginação
+- Planilha de registros com suporte a teclas de função (F2-F8)
+- Diálogos de confirmação padronizados
+- Estilos e cores consistentes em todas as telas
+- Feedback visual para ações do usuário
+
+### 8. Teclas de Função (`TECLAS_FUNCAO.md`)
+- Documentação completa de todas as teclas de função
+- Teclas F2-F8 para operações na planilha de registros
+- Teclas de navegação padronizadas em todas as telas
+- Atalhos para ações comuns
+
+### 9. Documentação
 - Documento de estrutura do arquivo (`estrutura_arquivo_movimentacao.md`)
+- Guia de teclas de função (`TECLAS_FUNCAO.md`)
 - README com instruções detalhadas
+- Resumo do projeto (`RESUMO_PROJETO.md`)
 - Exemplos de arquivos válidos
 - Configuração padrão (`config.txt`)
 

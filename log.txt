@@ -1079,3 +1079,9 @@
 [2025-08-02 19:16:45] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 63 do adquirente 46
 [2025-08-02 19:16:45] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] Excluindo registro 61 do adquirente 46
 [2025-08-02 19:16:45] [INFO] [log_operacao] [EXCLUIR_POR_ADQUIRENTE] 8 registro(s) excluído(s) para o adquirente 46 e trailer recalculado
+[2025-08-03 10:33:36] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Iniciando carregamento do arquivo rc040725.027
+[2025-08-03 10:33:36] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Header carregado com sucesso
+[2025-08-03 10:33:36] [INFO] [log_operacao] [CARREGAR_ARQUIVO] 39 registros de movimento carregados
+[2025-08-03 10:33:36] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Registro Trailer carregado com sucesso
+[2025-08-03 10:33:36] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rc040725.027 carregado e validado com sucesso
+[2025-08-03 10:33:36] [INFO] [log_operacao] [CARREGAR_ARQUIVO] Arquivo rc040725.027 carregado com sucesso
